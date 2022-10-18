@@ -1,6 +1,6 @@
 <?php
 
-include(validate.php)
+include "database.php";
 
 $email = $_POST["email"] ;
    $pass = $_POST["password"];
@@ -15,15 +15,7 @@ VALUES ('$email','$pass')";
 
 
 if(mysqli_query($connect,$sql)){
-
- 
-  echo "Tanga!";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+echo "success";
 }
 
-$conn->close();
-    
-    
-?>    
-    
+?>
