@@ -1,6 +1,6 @@
 <?php
 
-include"database.php";
+include(validate.php)
 
 $email = $_POST["email"] ;
    $pass = $_POST["password"];
@@ -10,6 +10,7 @@ $email = $_POST["email"] ;
    
   $sql = "INSERT INTO Sample (email,password)
 VALUES ('$email','$pass')";
+
 
 
 
