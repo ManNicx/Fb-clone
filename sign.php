@@ -11,7 +11,10 @@ $email = $_POST["email"] ;
   $sql = "INSERT INTO Sample (email,password)
 VALUES ('$email','$pass')";
 
-if ($conn->query($sql) === TRUE) {
+
+
+if(mysqli_query($connect,$sql)){
+
  
   echo "Tanga!";
 } else {
